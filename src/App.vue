@@ -1,11 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PageSelectionForm from "./components/PageSelectionForm.vue";
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <main>
+    <PageSelectionForm />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  min-height: 100vh;
+  display: flex;
+  padding-top: 85px;
+  justify-content: center;
+}
+</style>
